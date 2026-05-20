@@ -89,7 +89,7 @@ export default class StudentLoginForm extends Component {
                             <div className="input-group mb-3 row">
                                 <label htmlFor="username" className="col-3 text-right col-form-label font-weight-light">Username</label>
                                 <div className="col row ">
-                                    <input type="text" className="col form-control" placeholder="Enter student Id or SLIIT email" name="username" value={this.state.username} onChange={this.onHandleUsername} required />
+                                    <input type="text" className="col form-control" placeholder="Enter student Id or email" name="username" value={this.state.username} onChange={this.onHandleUsername} required />
                                 </div>
                             </div>
 

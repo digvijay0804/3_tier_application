@@ -53,13 +53,13 @@ export default class StudentRegisterForm extends Component {
                     <div className="form-group">
                         <label for="studentId">Student ID</label>
                         <input type="text" className="form-control" id="studentId" name="studentId" aria-describedby="studentIdHelp" placeholder="Enter Student ID" required />
-                        <small id="emailHelp" className="form-text text-muted">Enter SLIIT registration number.</small>
+                        <small id="emailHelp" className="form-text text-muted">Enter student ID.</small>
                     </div>
 
                     <div className="form-group">
                         <label for="email">Email address</label>
                         <input type="email" className="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required />
-                        <small id="emailHelp" className="form-text text-muted">Enter sLIIT email address.</small>
+                        <small id="emailHelp" className="form-text text-muted">Enter email address.</small>
                     </div>
 
                     <div className="form-group">

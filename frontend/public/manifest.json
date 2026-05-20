@@ -1,6 +1,6 @@
 {
-  "short_name": "Student Service App",
-  "name": "student-service",
+  "short_name": "Student Information App",
+  "name": "student-information",
   "icons": [
     {
       "src": "sliit-logo.png",

@@ -1,53 +1,27 @@
-version: "3"
+version: '3'
 
 services:
+
   mongodb:
     image: mongo:latest
-    container_name: "mongodb"
-    networks:
-      - sliit-docker
+    container_name: mongodb
     ports:
-      - 21017:21017
-    restart: always
-    volumes:
-      - mongodb:/data/db
-      - mongodb_config:/data/configdb
-  
+      - "21017:27017"
+
   backend:
-    image: springboot-studentservice:1.0
+    build: ./backend
     container_name: springboot-studentservice
-    build:
-      context: ./backend
-      dockerfile: ./dockerfile
     ports:
-      - 8080:8080
-    volumes:
-      - ./backend:/app
-    networks:
-      - sliit-docker
-    links:
+      - "8080:8080"
+    depends_on:
       - mongodb
-    
+
   frontend:
-    image: sliit-docker-client-app:v1.0
-    build:
-      context: ./frontend
-      dockerfile: ./Dockerfile
+    build: ./frontend
+    container_name: react-studentservice
     ports:
-      - 3000:3000
-    volumes:
-      - ./frontend:/app
-    networks:
-      - sliit-docker
+      - "3000:3000"
+    stdin_open: true
+    tty: true
     depends_on:
       - backend
-    environment:
-      - CHOKIDAR_USEPOLLING=true
-
-networks:
-  sliit-docker:
-    driver: bridge
-
-volumes:
-  mongodb:
-  mongodb_config:

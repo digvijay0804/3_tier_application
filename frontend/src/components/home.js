@@ -15,14 +15,14 @@ export default class Home extends Component {
                         <div className="row justify-content-center align-items-center">
                             <div className="col-md-4">
 
-                                <img src="/sliit-logo.png" alt="sliit-logo" />
-                                <p className="display-4 text-secondary font-weight-bold">SLIIT</p>
+                                <img src="/sahil-logo.png" alt="sahil-logo" width="120" />
+                                <p className="display-4 text-secondary font-weight-bold">SAHIL</p>
 
                             </div>
                             <div class="col-md-8 align-content-center">
 
-                                <h1><span className="fa fa-lock"></span>Cloud Computing Assignment 1</h1>
-                                <h4>3-Tier Web Application deploy with</h4><span className="lead font-weight-bold">Docker</span>
+                                <h1><span className="fa fa-lock"></span>Cloud & DevOps Technologies</h1>
+                                <h4> Studend Service Web Application deploy with</h4><span className="lead font-weight-bold">Devops</span>
                                 <br />
                                 <hr />
 

@@ -22,7 +22,7 @@ export default class Navbar extends Component {
 
                 return (
                     <nav className="navbar navbar-dark bg-dark navbar-expand">
-                        <Link to="/" className="navbar-brand">Student Service</Link>
+                        <Link to="/" className="navbar-brand">Student Information</Link>
                         <div className="collapse navbar-collapse">
                             <ul className="navbar-nav mr-auto">
                             <li><Link to="/staff/student-dashboard" className="nav-link">Student Dashboard</Link></li>
@@ -35,7 +35,7 @@ export default class Navbar extends Component {
             }else{
                 return (
                     <nav className="navbar navbar-dark bg-dark navbar-expand">
-                        <Link to="/" className="navbar-brand">Student Service</Link>
+                        <Link to="/" className="navbar-brand">Student Information</Link>
                         <div className="collapse navbar-collapse">
                             <ul className="navbar-nav mr-auto">
                             <li><Link to="student/profile" className="nav-link">Profile</Link></li>
@@ -50,7 +50,7 @@ export default class Navbar extends Component {
 
             return(
                 <nav className="navbar navbar-dark bg-dark navbar-expand">
-                    <Link to="/" className="navbar-brand">Student Service</Link>
+                    <Link to="/" className="navbar-brand">Student Information</Link>
                     <div className="collapse navbar-collapse">
                         <ul className="navbar-nav mr-auto">
                         <li><Link to="/student/new"  className="nav-link">Register Student</Link></li>
